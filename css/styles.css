@@ -1,3 +1,8 @@
+/*reset*/
+p{
+	margin: 0;
+}
+/*main*/
 html, body{
 	margin: 0;
 	padding: 0;
@@ -7,25 +12,51 @@ html, body{
 	position: relative;
 	min-height: 100%;
 	color: #525051;
-	font-family: MyriadPro sans-serif;
+	font-family: MyriadPro, sans-serif;
+	font-size: 18px;
 }
 .wrapper{
 	width: 998px;
 	margin: 0 auto;
-	background: yellow;
-	height: 440px;
 }
+
+.splitter{
+	overflow: hidden;
+	text-align: center;
+}
+.splitter span{
+	position: relative;
+}
+.splitter span:before,
+.splitter span:after{
+	content: "";
+	position: absolute;
+	width: 200px;
+	top: 48%;
+	border-top: 1px solid #36383e;
+	border-bottom: 1px solid #525152;
+}
+.splitter span:before{
+	right: 100%;
+	margin-right: 5px;
+}
+.splitter span:after{
+	left: 100%;
+	margin-left: 5px;
+}
+/*header*/
 header{
 	height: 440px;
-	background: -webkit-linear-gradient(#151419, #3c3c42);
 	border-top: 12px solid #33333b;
 	box-shadow: inset 0 -4px 5px rgba(0, 1, 2, 0.65);
+	background: -webkit-linear-gradient(#151419, #3c3c42);
+	background: linear-gradient(#151419, #3c3c42);
 }
-.logo{
+.catwill-logo{
 	float: left;
 	width: 263px;
 	height: 97px;
-	background: #33333b url("../images/logo.png") 15px 3px no-repeat;
+	background: #33333b url("../images/catwill-logo.png") 15px 3px no-repeat;
 	border-radius: 0 0 18px 18px;
 	text-indent: -9999px;
 }
@@ -44,21 +75,42 @@ header{
 	border-radius: 50%;
 }
 .top-social .facebook{
-	background-position-x: -58px;
+	background-position: -58px 0;
 }
 .top-social .gmail{
-	background-position-x: -116px;
+	background-position: -116px 0;
 }
 .top-social .vk{
-	background-position-x: -174px;
+	background-position: -174px 0;
 }
 .top-social a:active{
-	opacity: 0.5;
+	opacity: 0.3;
 }
+.ss-holder{
+	clear: both;
+	float: left;
+	margin: 85px 0 0 65px;
+	width: 394px;
+}
+.scary-stories{
+	padding: 0 0 10px 97px;
+	background: url("../images/ss-logo.png") 0px 7px  no-repeat;
+	font-family: InformaPro;
+	font-size: 42px;
+	line-height: 48px;
+	text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.75);
+	color: #e0a310;
+}
+.tease{
+	color: #bcbaab;
+	margin-top: 14px;
+}
+/*main content*/
 #main{
 	height: 500px;
 	padding-bottom: 264px;
 }
+/*footer*/
 footer{
 	position: absolute;
 	width: 100%;
