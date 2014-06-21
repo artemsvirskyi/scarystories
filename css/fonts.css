@@ -1,0 +1,30 @@
+@font-face{
+	font-family: MyriadPro;
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/myriadpro-regular.woff') format('woff');
+}
+@font-face{
+	font-family: MyriadPro;
+	font-weight: bold;
+	font-style: normal;
+	src: url('../fonts/myriadpro-semibold.woff') format('woff');
+}
+@font-face{
+	font-family: InformaPro;
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/informaprocondensed-normal.woff') format('woff');
+}
+/* @font-face{
+	font-family: InformaPro;
+	font-weight: 500;
+	font-style: normal;
+	src: url('../fonts/informaprocondensed-medium.woff') format('woff');
+}
+@font-face{
+	font-family: mBrody;
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/m-brody.ttf') format('truetype');
+} */
