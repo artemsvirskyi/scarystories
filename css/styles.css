@@ -1,6 +1,38 @@
+@font-face{
+	font-family: MyriadPro;
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/myriadpro-regular.woff') format('woff');
+}
+@font-face{
+	font-family: MyriadPro;
+	font-weight: bold;
+	font-style: normal;
+	src: url('../fonts/myriadpro-semibold.woff') format('woff');
+}
+@font-face{
+	font-family: InformaPro;
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/informaprocondensed-normal.woff') format('woff');
+}
+@font-face{
+	font-family: InformaPro;
+	font-weight: 500;
+	font-style: normal;
+	src: url('../fonts/informaprocondensed-medium.woff') format('woff');
+}
+
 /*reset*/
 p{
 	margin: 0;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+a, button{
+	-webkit-tap-highlight-color: transparent;
 }
 /*main*/
 html, body{
@@ -11,24 +43,52 @@ html, body{
 #container{
 	position: relative;
 	min-height: 100%;
+	min-width: 998px;
 	color: #525051;
 	font-family: MyriadPro, sans-serif;
 	font-size: 18px;
 }
 .wrapper{
+	position: relative;
 	width: 998px;
 	margin: 0 auto;
+}
+.margin-fix{
+	padding-top: 1px;
+}
+header{
+	height: 440px;
+	border-top: 12px solid #33333b;
+	box-shadow: inset 0 -4px 5px rgba(0, 1, 2, 0.65);
+	background: url("../images/dust.jpg");
+}
+header .wrapper{
+	height: 440px;
+	background: url("../images/header.png");
+}
+#main{
+	padding-bottom: 264px;
+	background: url("../images/wall.jpg");
+}
+footer{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	height: 264px;
+	background: black;
+	background: url("../images/dust.jpg");
 }
 
 .splitter{
 	overflow: hidden;
 	text-align: center;
 }
-.splitter span{
+.splitter-text{
 	position: relative;
+	display: inline-block;
 }
-.splitter span:before,
-.splitter span:after{
+.splitter-text:before,
+.splitter-text:after{
 	content: "";
 	position: absolute;
 	width: 200px;
@@ -36,27 +96,21 @@ html, body{
 	border-top: 1px solid #36383e;
 	border-bottom: 1px solid #525152;
 }
-.splitter span:before{
+.splitter-text:before{
 	right: 100%;
 	margin-right: 5px;
 }
-.splitter span:after{
+.splitter-text:after{
 	left: 100%;
 	margin-left: 5px;
 }
 /*header*/
-header{
-	height: 440px;
-	border-top: 12px solid #33333b;
-	box-shadow: inset 0 -4px 5px rgba(0, 1, 2, 0.65);
-	background: -webkit-linear-gradient(#151419, #3c3c42);
-	background: linear-gradient(#151419, #3c3c42);
-}
 .catwill-logo{
 	float: left;
 	width: 263px;
 	height: 97px;
-	background: #33333b url("../images/catwill-logo.png") 15px 3px no-repeat;
+	background: #33333b url("../images/catwill-logo-retina.png") 15px 3px no-repeat;
+	background-size: 229px 79px;
 	border-radius: 0 0 18px 18px;
 	text-indent: -9999px;
 }
@@ -70,14 +124,15 @@ header{
 	width: 58px;
 	height: 58px;
 	margin-left: 40px;
-	background: #33333b url("../images/social.png") no-repeat;
+	background: #33333b url("../images/social-retina.png") no-repeat;
+	background-size: 232px 58px;
 	box-shadow: 0 3px 0 rgba(4, 7, 11, 0.12);
 	border-radius: 50%;
 }
 .top-social .facebook{
 	background-position: -58px 0;
 }
-.top-social .gmail{
+.top-social .mail{
 	background-position: -116px 0;
 }
 .top-social .vk{
@@ -89,32 +144,219 @@ header{
 .ss-holder{
 	clear: both;
 	float: left;
-	margin: 85px 0 0 65px;
+	padding: 85px 0 0 65px;
 	width: 394px;
 }
 .scary-stories{
 	padding: 0 0 10px 97px;
-	background: url("../images/ss-logo.png") 0px 7px  no-repeat;
-	font-family: InformaPro;
+	background: url("../images/ss-logo-retina.png") 0px 7px  no-repeat;
+	background-size: 88px 88px;
+	font-family: InformaPro, sans-serif;
 	font-size: 42px;
+	font-weight: 500;
 	line-height: 48px;
 	text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.75);
 	color: #e0a310;
+}
+.ss-holder .splitter{
+	font-family: InformaPro, sans-serif;
 }
 .tease{
 	color: #bcbaab;
 	margin-top: 14px;
 }
 /*main content*/
-#main{
-	height: 500px;
-	padding-bottom: 264px;
+.download{
+	width: 236px;
+	margin: 40px 0 0 60px;
+}
+.download p{
+	text-align: center;
+	line-height: 30px;
+	font-weight: bold;
+	color: #85837d;
+}
+.app-store{
+	position: relative;
+	display: block;
+	border-radius: 8px;
+	height: 63px;
+	color: white;
+	padding: 5px 0 0 65px;
+	font-size: 16px;
+	margin: 10px 0;
+}
+.app-store:before{
+	content: "";
+	position: absolute;
+	left: 27px;
+	top: 6px;
+	width: 28px;
+	height: 52px;
+	background: url("../images/app-store-retina.png") no-repeat;
+	background-size: 84px 52px;
+}
+.app-store strong{
+	font-size: 33px;
+	line-height: 28px;
+	text-shadow: 0 -1px 0 rgba(92, 92, 92, 0.45);
+}
+.full{
+	border: 1px solid #edb47a;
+	box-shadow: 0 2px 1px #9a7920;
+	background: -webkit-linear-gradient(top, #f8e17e 0%,#f5dc71 14%,#f1d152 35%,#f0d04e 36%,#f0d04e 37%,#f1cf4b 37%,#edc938 49%,#eec834 49%,#ecc530 53%,#ebc32d 53%,#eac22a 56%,#ebc027 56%,#eabf26 59%,#e9bd23 59%,#e9bd23 60%,#e8bc1f 61%,#e7b91b 65%,#e6b717 65%,#e6b411 69%,#e5b30c 70%,#e5b30c 71%,#e4b106 71%,#e3b103 74%,#e3af00 74%,#da9d00 100%); 
+	background: -ms-linear-gradient(top, #f8e17e 0%,#f5dc71 14%,#f1d152 35%,#f0d04e 36%,#f0d04e 37%,#f1cf4b 37%,#edc938 49%,#eec834 49%,#ecc530 53%,#ebc32d 53%,#eac22a 56%,#ebc027 56%,#eabf26 59%,#e9bd23 59%,#e9bd23 60%,#e8bc1f 61%,#e7b91b 65%,#e6b717 65%,#e6b411 69%,#e5b30c 70%,#e5b30c 71%,#e4b106 71%,#e3b103 74%,#e3af00 74%,#da9d00 100%);
+	background: linear-gradient(to bottom, #f8e17e 0%,#f5dc71 14%,#f1d152 35%,#f0d04e 36%,#f0d04e 37%,#f1cf4b 37%,#edc938 49%,#eec834 49%,#ecc530 53%,#ebc32d 53%,#eac22a 56%,#ebc027 56%,#eabf26 59%,#e9bd23 59%,#e9bd23 60%,#e8bc1f 61%,#e7b91b 65%,#e6b717 65%,#e6b411 69%,#e5b30c 70%,#e5b30c 71%,#e4b106 71%,#e3b103 74%,#e3af00 74%,#da9d00 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8e17e', endColorstr='#da9d00',GradientType=0 );
+}
+.full:active{
+	border: 1px solid #edb47a;
+	box-shadow: 0 2px 1px #9a7920;
+	color: #b58c14;
+	background: -webkit-linear-gradient(top, #c28b00 0%,#cfa000 25%,#d1a306 28%,#d3a711 31%,#e0bb2d 49%,#e6c74e 66%,#ebd46b 85%,#f0da79 100%); /* Chrome10+,Safari5.1+ */
+	background: -ms-linear-gradient(top, #c28b00 0%,#cfa000 25%,#d1a306 28%,#d3a711 31%,#e0bb2d 49%,#e6c74e 66%,#ebd46b 85%,#f0da79 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #c28b00 0%,#cfa000 25%,#d1a306 28%,#d3a711 31%,#e0bb2d 49%,#e6c74e 66%,#ebd46b 85%,#f0da79 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c28b00', endColorstr='#f0da79',GradientType=0 ); /* IE6-9 */
+}
+.full:active:before{
+	background-position: -28px 0;
+}
+.lite{
+	border: 1px solid #d0cbbd;
+	box-shadow: 0 2px 1px #968d73;
+	background: -webkit-linear-gradient(top, #dcd5ca 0%,#d2cbbd 32%,#c6bfaf 50%,#bdb3a2 71%,#b9b09c 84%,#b9b09c 100%); /* Chrome10+,Safari5.1+ */
+	background: -ms-linear-gradient(top, #dcd5ca 0%,#d2cbbd 32%,#c6bfaf 50%,#bdb3a2 71%,#b9b09c 84%,#b9b09c 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #dcd5ca 0%,#d2cbbd 32%,#c6bfaf 50%,#bdb3a2 71%,#b9b09c 84%,#b9b09c 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dcd5ca', endColorstr='#b9b09c',GradientType=0 ); /* IE6-9 */
+}
+.lite:active{
+	border: 1px solid #d0cbbd;
+	box-shadow: 0 2px 1px #968d73;
+	color: #9b9488;
+	background: -webkit-linear-gradient(top, #9c9587 0%,#b9b3a7 40%,#cac4bb 78%,#cbc5bd 99%,#d3ccbe 100%); /* Chrome10+,Safari5.1+ */
+	background: -ms-linear-gradient(top, #9c9587 0%,#b9b3a7 40%,#cac4bb 78%,#cbc5bd 99%,#d3ccbe 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #9c9587 0%,#b9b3a7 40%,#cac4bb 78%,#cbc5bd 99%,#d3ccbe 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9c9587', endColorstr='#d3ccbe',GradientType=0 ); /* IE6-9 */
+}
+.lite:active:before{
+	background-position: -56px 0;
+}
+.app-store:active strong{
+	text-shadow: none;
+}
+.download .splitter{
+	margin-top: 20px;
+}
+.download .splitter-text{
+	width: 37px;
+	height: 18px;
+	background: url("../images/or-reitna.png") no-repeat;
+	background-size: 100% 100%;
+}
+.download .splitter-text:before,
+.download .splitter-text:after{
+	top: 7px;
+	border-top-color: #d7d7d7;
+	border-bottom-color: #fafafa;
+}
+.carousels{
+	position: absolute;
+	left: 330px;
+	top: -293px;
+	width: 668px;
+	height: 729px;
+	background: url("../images/devices.png") no-repeat;
+}
+.all-screens{
+	position: absolute;
+	left: -14px;
+	top: -71px;
+	width: 145px;
+	height: 50px;
+	background: url("../images/all-screens-retina.png") no-repeat;
+	background-size: 100% 100%;
+}
+.features{
+	position: relative;
+	margin-top: 173px;
+	overflow: hidden;
+	padding-bottom: 82px;
+}
+.features:after{
+	content: "";
+	position: absolute;
+	width: 998px;
+	height: 24px;
+	bottom: 0;
+	left: 0;
+	background: url("../images/delimiter.png") no-repeat;
+}
+.features div{
+	float: left;
+	width: 20%;
+	text-align: center;
+}
+.features div:before{
+	content: "";
+	display: inline-block;
+	width: 68px;
+	height: 54px;
+	background: url("../images/features-icons-retina.png") no-repeat;
+	background-size: 340px 54px;
+}
+.features .likes:before{
+	background-position: -68px 0;
+}
+.features .choise:before{
+	background-position: -136px 0;
+}
+.features .huge:before{
+	background-position: -204px 0;
+}
+.features .easy:before{
+	background-position: -272px 0;
+}
+.features .title{
+	font-family: InformaPro, sans-serif;
+	font-size: 28px;
+	line-height: 28px;
+	margin: 10px 0;
+}
+.info{
+	padding: 0 5px 33px;
+}
+h1{
+	font-family: InformaPro, sans-serif;
+	font-weight: normal;
+	font-size: 48px;
+	color: #a77a08;
+	text-align: center;
+	margin: 14px 0;
+}
+.info p{
+	margin-bottom: 33px;
+	line-height: 31px;
+	text-indent: 40px;
+	text-align: justify;
 }
 /*footer*/
-footer{
-	position: absolute;
-	width: 100%;
-	bottom: 0;
-	height: 264px;
-	background: black;
+.contact{
+	font-size: 23px;
+	margin: 56px 0 0 67px;
+	float: left;
+	width: 268px;
+}
+.contact p{
+	color: #7f7f87;
+	margin: 0 0 17px 23px;
+	line-height: 34px;
+}
+.contact a{
+	display: block;
+	color: #949498;
+	background: #33333b;
+	text-shadow: 0 1px 0 black;
+	text-align: center;
+	border-radius: 8px;
+	padding: 12px 0;
 }
