@@ -81,4 +81,3 @@ function getNewIndex(length, direction, index){
 $(".carousel-holder").each(function(index){
 	new Carousel($(this));
 });
-
