@@ -541,6 +541,9 @@ h1{
 	border-radius: 8px;
 	padding: 12px 0;
 }
+.contact a{
+	cursor: default;
+}
 .share{
 	float: right;
 	margin: 128px 50px 0 0;
