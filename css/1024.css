@@ -40,3 +40,23 @@ footer{
 .top-social .vk{
 	background-position: -174px 0;
 }
+.tease{
+	display: none;
+}
+.full{
+	display: block;
+}
+.ss-holder{
+	padding: 85px 0 0 65px;
+	width: 394px;
+}
+.scary-stories{
+	padding: 0 0 10px 97px;
+	background-position: 0 7px;
+	background-size: 88px 88px;
+	font-size: 44px;
+	line-height: 48px;
+}
+.download{
+	margin: 40px 0 0 60px;
+}

@@ -2,7 +2,7 @@
 	width: 420px;
 }
 header{
-	height: 440px;
+	height: 390px;
 	border-top: 5px solid #33333b;
 }
 #main{
@@ -37,4 +37,26 @@ footer{
 }
 .top-social .vk{
 	background-position: -132px 0;
+}
+.ss-holder{
+	padding-top: 50px;
+}
+.scary-stories{
+	padding: 0 0 5px 77px;
+	background-size: 68px 68px;
+	width: 150px;
+	font-size: 30px;
+	line-height: 34px;
+	margin: 0 auto;
+}
+.ss-holder .splitter{
+	margin: 27px 0;
+}
+.tease{
+	width: 380px;
+	margin: 0 auto;
+	text-align: center;
+}
+.download{
+	margin: 10px auto;
 }

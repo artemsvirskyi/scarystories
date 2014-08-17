@@ -14,6 +14,7 @@ footer{
 .catwill-logo{
 	width: 199px;
 	height: 77px;
+	margin-left: 15px;
 	background-image: url("../images/catwill-logo-retina.png");
 	background-position: 10px 3px;
 	background-size: 175px 62px;
@@ -35,4 +36,47 @@ footer{
 }
 .top-social .vk{
 	background-position: -174px 0;
+}
+.ss-holder{
+	padding-top: 50px;
+}
+.scary-stories{
+	padding: 0 0 10px 97px;
+	background-position: 0 7px;
+	background-size: 88px 88px;
+	width: 225px;
+	font-size: 44px;
+	line-height: 48px;
+	margin: 0 auto;
+}
+.ss-holder .splitter{
+	margin: 17px 0;
+}
+.tease{
+	width: 410px;
+	margin: 0 auto;
+	text-align: center;
+}
+.download{
+	overflow: hidden;
+	width: auto;
+	padding: 32px 0 0 81px;
+}
+.download div{
+	float: left;
+	width: 236px;
+}
+.download .splitter{
+	width: auto;
+	margin: 95px 36px 0;
+}
+.lite-try .heavy{
+	display: none;
+}
+.lite-try .try768{
+	display: block;
+}
+.download .splitter-text:before,
+.download .splitter-text:after{
+	content: none;
 }

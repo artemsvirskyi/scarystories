@@ -1,67 +1,6 @@
 /*header*/
-.ss-holder{
-	clear: both;
-	float: left;
-	padding: 85px 0 0 65px;
-	width: 394px;
-}
-.scary-stories{
-	padding: 0 0 10px 97px;
-	background: url("../images/ss-logo-retina.png") 0px 7px  no-repeat;
-	background-size: 88px 88px;
-	font-size: 44px;
-	line-height: 48px;
-	text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.75);
-	color: #e0a30f;
-}
-.ss-holder .splitter{
-	font-size: 17px;
-}
-.tease{
-	color: #bcbaab;
-	margin-top: 14px;
-}
+
 /*main content*/
-.download{
-	width: 236px;
-	margin: 40px 0 0 60px;
-}
-.download p{
-	text-align: center;
-	line-height: 30px;
-	color: #85837d;
-}
-.app-store-dl{
-	position: relative;
-	display: block;
-	height: 73px;
-	background: url("../images/app-store-dl-retina.png") no-repeat;
-	background-size: 100% 400%;
-}
-.full:active{
-	background-position: 0 -73px;
-}
-.lite{
-	background-position: 0 -146px;
-}
-.lite:active{
-	background-position: 0 -219px;
-}
-.download .splitter{
-	margin-top: 20px;
-}
-.download .splitter-text{
-	width: 37px;
-	height: 18px;
-	background: url("../images/or-retina.png") no-repeat;
-	background-size: 100% 100%;
-}
-.download .splitter-text:before,
-.download .splitter-text:after{
-	top: 7px;
-	border-top-color: #d7d7d7;
-	border-bottom-color: #fafafa;
-}
 .all-screens{
 	position: absolute;
 	left: -14px;
