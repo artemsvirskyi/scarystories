@@ -1,0 +1,17 @@
+p{
+	margin: 0;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+a, button{
+	-webkit-tap-highlight-color: transparent;
+}
+button{
+	cursor: pointer;
+	outline: none;
+}
+b, strong{
+	font-weight: normal;
+}

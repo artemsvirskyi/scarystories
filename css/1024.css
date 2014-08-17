@@ -1,0 +1,42 @@
+.wrapper{
+	width: 998px;
+}
+header{
+	height: 440px;
+	border-top: 12px solid #33333b;
+}
+header .wrapper{
+	background: url("../images/header.png");
+}
+#main{
+	padding-bottom: 264px;
+}
+footer{
+	height: 264px;
+}
+.catwill-logo{
+	width: 263px;
+	height: 97px;
+	background-image: url("../images/catwill-logo-retina.png");
+	background-position: 15px 3px;
+	background-size: 229px 79px;
+	border-radius: 0 0 18px 18px;
+}
+.top-social{
+	margin: 47px 60px 0 0;
+}
+.top-social a{
+	width: 58px;
+	height: 58px;
+	margin-left: 40px;
+	background-size: 232px 58px;
+}
+.top-social .facebook{
+	background-position: -58px 0;
+}
+.top-social .mail{
+	background-position: -116px 0;
+}
+.top-social .vk{
+	background-position: -174px 0;
+}
