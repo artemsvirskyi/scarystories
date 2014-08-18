@@ -1,15 +1,6 @@
 /*header*/
 
 /*main content*/
-.all-screens{
-	position: absolute;
-	left: -14px;
-	top: -71px;
-	width: 145px;
-	height: 50px;
-	background: url("../images/all-screens-retina.png") no-repeat;
-	background-size: 100% 100%;
-}
 .features{
 	position: relative;
 	margin-top: 173px;

@@ -80,3 +80,17 @@ footer{
 .download .splitter-text:after{
 	content: none;
 }
+.all-screens{
+	position: absolute;
+	left: -34px;
+	top: 48px;
+ 	width: 145px;
+	height: 50px;
+	background: url("../images/all-screens-retina.png") no-repeat;
+	background-size: 100% 100%;
+}
+.carousels{
+	position: relative;
+	height: 729px;
+	margin: 62px 0 0 68px;
+}

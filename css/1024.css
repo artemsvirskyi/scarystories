@@ -60,3 +60,20 @@ footer{
 .download{
 	margin: 40px 0 0 60px;
 }
+.all-screens{
+	position: absolute;
+	left: -14px;
+	top: -71px;
+	width: 145px;
+	height: 50px;
+	background: url("../images/all-screens-retina.png") no-repeat;
+	background-size: 100% 100%;
+}
+.carousels{
+	position: absolute;
+	left: 330px;
+	top: -293px;
+	width: 668px;
+	height: 729px;
+	pointer-events: none;
+}
