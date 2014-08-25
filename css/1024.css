@@ -1,0 +1,190 @@
+.wrapper{
+	width: 998px;
+}
+header{
+	height: 440px;
+	border-top: 12px solid #33333b;
+}
+header .wrapper{
+	background: url("../images/header.png");
+}
+#main{
+	padding-bottom: 264px;
+}
+footer{
+	height: 264px;
+}
+.catwill-logo{
+	width: 263px;
+	height: 97px;
+	background-image: url("../images/catwill-logo-retina.png");
+	background-position: 15px 3px;
+	background-size: 229px 79px;
+	border-radius: 0 0 18px 18px;
+}
+.top-social{
+	margin: 47px 60px 0 0;
+}
+.top-social a{
+	width: 58px;
+	height: 58px;
+	margin-left: 40px;
+	background-size: 232px 58px;
+}
+.top-social .facebook{
+	background-position: -58px 0;
+}
+.top-social .mail{
+	background-position: -116px 0;
+}
+.top-social .vk{
+	background-position: -174px 0;
+}
+.tease{
+	display: none;
+}
+.full{
+	display: block;
+}
+.ss-holder{
+	padding: 85px 0 0 65px;
+	width: 394px;
+}
+.scary-stories{
+	padding: 0 0 10px 97px;
+	background-position: 0 7px;
+	background-size: 88px 88px;
+	font-size: 44px;
+	line-height: 48px;
+}
+.download{
+	margin: 40px 0 0 60px;
+}
+.all-screens{
+	position: absolute;
+	left: -14px;
+	top: -71px;
+	width: 145px;
+	height: 50px;
+	background: url("../images/all-screens-retina.png") no-repeat;
+	background-size: 100% 100%;
+}
+.carousels{
+	position: absolute;
+	left: 330px;
+	top: -293px;
+	width: 668px;
+	height: 729px;
+	pointer-events: none;
+}
+#iPhoneCarousel{
+	top: 244px;
+	left: 1px;
+}
+#iPadCarousel{
+	top: 0px;
+	left: 147px;
+	width: 520px;
+	height: 678px;
+	background: url("../images/ipad.png") no-repeat;
+}
+.carousel-control{
+	width: 30px;
+	height: 30px;
+	background-color: #2b2b29;
+	border: 2px solid #424141;
+	border-radius: 50%;
+	box-shadow: 0 3px rgba(4, 7, 11, 0.7);
+}
+.carousel-control:before{
+	content: "";
+	position: absolute;
+	left: 7px;
+	top: 5px;
+	width: 14px;
+	height: 19px;
+	background: url("../images/nav-retina.png") no-repeat;
+	background-size: 28px 19px;
+}
+.carousel-control.right:before{
+	background-position: -14px 0;
+	top: 6px;
+	left: 9px;
+}
+#iPadCarousel .carousel-control.left{
+	left: 182px;
+	top: 624px;
+}
+#iPadCarousel .carousel-control.right{
+	left: 303px;
+	top: 623px;
+}
+#iPhoneCarousel .carousel-control.left{
+	left: 38px;
+	top: 431px;
+}
+#iPhoneCarousel .carousel-control.right{
+	left: 161px;
+	top: 431px;
+}
+.features{
+	margin-top: 173px;
+	padding-bottom: 82px;
+}
+.features:after{
+	content: "";
+	position: absolute;
+	width: 998px;
+	height: 24px;
+	bottom: 0;
+	left: 0;
+	background: url("../images/delimiter.png") no-repeat;
+}
+.features div{
+	width: 20%;
+}
+.info{
+	padding: 0 5px 33px;
+}
+h1{
+	font-size: 44px;
+	color: #a67a08;
+	text-align: center;
+	margin: 14px 0;
+}
+.info p{
+	margin-bottom: 33px;
+	font-size: 20px;
+	line-height: 31px;
+	text-indent: 40px;
+	text-align: justify;
+}
+
+#iPadCarousel .first .item-img{
+	background-image: url("../images/ipad6.jpg");
+}
+#iPadCarousel .second .item-img{
+	background-image: url("../images/ipad1.jpg");
+}
+#iPadCarousel .third .item-img{
+	background-image: url("../images/ipad2.jpg");
+}
+#iPadCarousel .fourth .item-img{
+	background-image: url("../images/ipad3.jpg");
+}
+#iPadCarousel .fifth .item-img{
+	background-image: url("../images/ipad4.jpg");
+}
+#iPadCarousel .sixth .item-img{
+	background-image: url("../images/ipad5.jpg");
+}
+html::after{
+	content: "";
+	background:
+		url("../images/ipad1.jpg"),
+		url("../images/ipad2.jpg"),
+		url("../images/ipad3.jpg"),
+		url("../images/ipad4.jpg"),
+		url("../images/ipad5.jpg"),
+		url("../images/ipad6.jpg");
+}

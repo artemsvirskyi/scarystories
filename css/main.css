@@ -1,22 +1,3 @@
-/*reset*/
-p{
-	margin: 0;
-}
-a{
-	text-decoration: none;
-	color: inherit;
-}
-a, button{
-	-webkit-tap-highlight-color: transparent;
-}
-button{
-	cursor: pointer;
-	outline: none;
-}
-b, strong{
-	font-weight: normal;
-}
-/*main*/
 html, body{
 	margin: 0;
 	padding: 0;
@@ -25,10 +6,10 @@ html, body{
 #container{
 	position: relative;
 	min-height: 100%;
-	min-width: 998px;
 	color: #525051;
 	font-family: 'PT Sans', sans-serif;
 	font-size: 18px;
+	overflow: hidden;
 }
 .title{
 	font-family: 'Roboto Condensed', sans-serif;
@@ -39,35 +20,11 @@ html, body{
 }
 .wrapper{
 	position: relative;
-	width: 998px;
 	margin: 0 auto;
 }
 .margin-fix{
 	padding-top: 1px;
 }
-header{
-	height: 440px;
-	border-top: 12px solid #33333b;
-	box-shadow: inset 0 -4px 5px rgba(0, 1, 2, 0.65);
-	background: url("../images/dust.jpg");
-}
-header .wrapper{
-	height: 440px;
-	background: url("../images/header.png");
-}
-#main{
-	padding-bottom: 264px;
-	background: url("../images/wall.jpg");
-}
-footer{
-	position: absolute;
-	width: 100%;
-	bottom: 0;
-	height: 264px;
-	background: black;
-	background: url("../images/dust.jpg");
-}
-
 .splitter{
 	overflow: hidden;
 	text-align: center;
@@ -80,7 +37,7 @@ footer{
 .splitter-text:after{
 	content: "";
 	position: absolute;
-	width: 200px;
+	width: 300px;
 	top: 48%;
 	border-top: 1px solid #36383e;
 	border-bottom: 1px solid #525152;
@@ -93,57 +50,54 @@ footer{
 	left: 100%;
 	margin-left: 5px;
 }
-/*header*/
+header{
+	box-shadow: inset 0 -4px 5px rgba(0, 1, 2, 0.65);
+	background: black url("../images/dust.jpg");
+}
+header .wrapper{
+	height: 100%;
+}
+#main{
+	background: url("../images/wall.jpg");
+}
+footer{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	background: black url("../images/dust.jpg");
+}
 .catwill-logo{
 	float: left;
-	width: 263px;
-	height: 97px;
-	background: #33333b url("../images/catwill-logo-retina.png") 15px 3px no-repeat;
-	background-size: 229px 79px;
-	border-radius: 0 0 18px 18px;
+	background-color: #33333b;
+	background-repeat: no-repeat;
 	text-indent: -9999px;
+	border-radius: 0 0 12px 12px;
 }
 .top-social{
 	float: right;
-	margin: 47px 60px 0 0;
 }
 .top-social a{
 	display: block;
 	float: left;
-	width: 58px;
-	height: 58px;
-	margin-left: 40px;
 	background: #33333b url("../images/social-retina.png") no-repeat;
-	background-size: 232px 58px;
 	box-shadow: 0 3px 0 rgba(4, 7, 11, 0.12);
 	border-radius: 50%;
-}
-.top-social .facebook{
-	background-position: -58px 0;
-}
-.top-social .mail{
-	background-position: -116px 0;
-}
-.top-social .vk{
-	background-position: -174px 0;
 }
 .top-social a:active{
 	opacity: 0.3;
 }
+.top-social a:first-child{
+	margin: 0;
+}
+
 .ss-holder{
 	clear: both;
-	float: left;
-	padding: 85px 0 0 65px;
-	width: 394px;
 }
 .scary-stories{
-	padding: 0 0 10px 97px;
-	background: url("../images/ss-logo-retina.png") 0px 7px  no-repeat;
-	background-size: 88px 88px;
-	font-size: 44px;
-	line-height: 48px;
+	background-image: url("../images/ss-logo-retina.png");
+	background-repeat: no-repeat;
 	text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.75);
-	color: #d0a22b;
+	color: #e0a30f;
 }
 .ss-holder .splitter{
 	font-size: 17px;
@@ -152,10 +106,11 @@ footer{
 	color: #bcbaab;
 	margin-top: 14px;
 }
-/*main content*/
+.full{
+	display: none;
+}
 .download{
 	width: 236px;
-	margin: 40px 0 0 60px;
 }
 .download p{
 	text-align: center;
@@ -166,20 +121,25 @@ footer{
 	position: relative;
 	display: block;
 	height: 73px;
-	background: url("../images/app-store-dl-retina.png") no-repeat;
-	background-size: 100% 400%;
+	background-size: 100% 100%;
 }
-.full:active{
-	background-position: 0 -73px;
+.app-store-dl.full{
+	background-image: url("../images/dl-full-retina.png");
 }
-.lite{
-	background-position: 0 -146px;
+.app-store-dl.full:active{
+	background-image: url("../images/dl-full-active-retina.png");
 }
-.lite:active{
-	background-position: 0 -219px;
+.app-store-dl.lite{
+	background-image: url("../images/dl-lite-retina.png");
+}
+.app-store-dl.lite:active{
+	background-image: url("../images/dl-lite-active-retina.png");
 }
 .download .splitter{
-	margin-top: 20px;
+	margin: 20px 0 10px;
+}
+.download .heavy{
+	margin: 7px 0;
 }
 .download .splitter-text{
 	width: 37px;
@@ -193,34 +153,22 @@ footer{
 	border-top-color: #d7d7d7;
 	border-bottom-color: #fafafa;
 }
-.all-screens{
-	position: absolute;
-	left: -14px;
-	top: -71px;
-	width: 145px;
-	height: 50px;
-	background: url("../images/all-screens-retina.png") no-repeat;
-	background-size: 100% 100%;
+.try768{
+	display: none;
+}
+.switch-holder{
+	display: none;
 }
 .features{
 	position: relative;
-	margin-top: 173px;
 	overflow: hidden;
-	padding-bottom: 82px;
-}
-.features:after{
-	content: "";
-	position: absolute;
-	width: 998px;
-	height: 24px;
-	bottom: 0;
-	left: 0;
-	background: url("../images/delimiter.png") no-repeat;
+	text-align: center;
 }
 .features div{
 	float: left;
-	width: 20%;
 	text-align: center;
+	height: 181px;
+	width: 190px;
 }
 .features div:before{
 	content: "";
@@ -243,27 +191,13 @@ footer{
 	background-position: -272px 0;
 }
 .features .title{
-	font-size: 30px;
+	font-size: 28px;
 	line-height: 28px;
 	margin: 10px 0;
 }
-.info{
-	padding: 0 5px 33px;
+footer .wrapper{
+	overflow: hidden;
 }
-h1{
-	font-size: 44px;
-	color: #9a7920;
-	text-align: center;
-	margin: 14px 0;
-}
-.info p{
-	margin-bottom: 33px;
-	font-size: 20px;
-	line-height: 31px;
-	text-indent: 40px;
-	text-align: justify;
-}
-/*footer*/
 .contact{
 	font-size: 23px;
 	margin: 56px 0 0 67px;
@@ -286,7 +220,7 @@ h1{
 }
 .share{
 	float: right;
-	margin: 128px 50px 0 0;
+	margin: 80px 50px 0 0;
 }
 .float-left {
 	float:left;

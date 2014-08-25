@@ -1,11 +1,3 @@
-.carousels{
-	position: absolute;
-	left: 330px;
-	top: -293px;
-	width: 668px;
-	height: 729px;
-	pointer-events: none;
-}
 .carousel{
 	position: absolute;
 	pointer-events: auto;
@@ -20,6 +12,8 @@
 	height: inherit;
 	-webkit-transition-duration: 500ms;
 	transition-duration: 500ms;
+	-webkit-transition-property: -webkit-transform;
+    transition-property: transform;
 	display: none;
 }
 .item-img{
@@ -72,6 +66,11 @@
 	margin: 0;
 	padding: 0;
 	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	width: 144px;
+	margin: 15px auto 0;
 }
 .carousel-indicators li{
 	float: left;
@@ -79,7 +78,7 @@
 	height: 10px;
 	border-radius: 50%;
 	background-color: #85837d;
-	margin-right: 14px;
+	margin: 0 7px;
 	-webkit-transition-duration: 500ms;
 	cursor: pointer;
 }
@@ -90,37 +89,9 @@
 .carousel-control{
 	position: absolute;
 	display: block;
-	width: 30px;
-	height: 30px;
-	background-color: #2b2b29;
-	border: 2px solid #424141;
-	border-radius: 50%;
-	box-shadow: 0 3px rgba(4, 7, 11, 0.7);
-}
-.carousel-control:before{
-	content: "";
-	position: absolute;
-	left: 7px;
-	top: 5px;
-	width: 14px;
-	height: 19px;
-	background: url("../images/nav-retina.png") no-repeat;
-	background-size: 28px 19px;
 }
 .carousel-control:active{
 	opacity: 0.3;
-}
-.carousel-control.right:before{
-	background-position: -14px 0;
-	top: 6px;
-	left: 9px;
-}
-#iPadCarousel{
-	top: 0px;
-	left: 147px;
-	width: 520px;
-	height: 678px;
-	background: url("../images/ipad.png") no-repeat;
 }
 #iPadCarousel .carousel-inner{
 	top: 59px;
@@ -129,43 +100,11 @@
 	height: 554px;
 	background-color: black;
 }
-#iPadCarousel .first .item-img{
-	background-image: url("../images/ipad6.jpg");
-}
-#iPadCarousel .second .item-img{
-	background-image: url("../images/ipad1.jpg");
-}
-#iPadCarousel .third .item-img{
-	background-image: url("../images/ipad2.jpg");
-}
-#iPadCarousel .fourth .item-img{
-	background-image: url("../images/ipad3.jpg");
-}
-#iPadCarousel .fifth .item-img{
-	background-image: url("../images/ipad4.jpg");
-}
-#iPadCarousel .sixth .item-img{
-	background-image: url("../images/ipad5.jpg");
-}
-#iPadCarousel .carousel-indicators{
-	top: 696px;
-	left: 195px;
-}
-#iPadCarousel .carousel-control.left{
-	left: 182px;
-	top: 624px;
-}
-#iPadCarousel .carousel-control.right{
-	left: 303px;
-	top: 623px;
-}  
-
 #iPhoneCarousel{
-	top: 244px;
-	left: 1px;
 	width: 230px;
 	height: 485px;
 	background: url("../images/iphone.png") no-repeat;
+	z-index: 1;
 }
 #iPhoneCarousel .carousel-inner{
 	top: 70px;
@@ -192,27 +131,9 @@
 #iPhoneCarousel .sixth .item-img{
 	background-image: url("../images/iphone5.jpg");
 }
-#iPhoneCarousel .carousel-indicators{
-	top: 500px;
-	left: 47px;
-}
-#iPhoneCarousel .carousel-control.left{
-	left: 38px;
-	top: 431px;
-}
-#iPhoneCarousel .carousel-control.right{
-	left: 161px;
-	top: 431px;
-}
 html::after{
 	content: "";
-	background: 
-		url("../images/ipad1.jpg"),
-		url("../images/ipad2.jpg"),
-		url("../images/ipad3.jpg"),
-		url("../images/ipad4.jpg"),
-		url("../images/ipad5.jpg"),
-		url("../images/ipad6.jpg"),
+	background:
 		url("../images/iphone1.jpg"),
 		url("../images/iphone2.jpg"),
 		url("../images/iphone3.jpg"),
