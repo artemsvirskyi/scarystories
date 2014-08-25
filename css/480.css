@@ -60,3 +60,116 @@ footer{
 .download{
 	margin: 10px auto;
 }
+.switch-holder{
+	display: block;
+	position: relative;
+	margin-top: 20px;
+	font-size: 24px;
+	text-align: center;
+}
+.carousel-switch{
+	font-weight: 700;
+	color: #bcbaab;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.carousel-switch.active{
+	font-weight: 400;
+	color: #525051;
+	cursor: default;
+	text-decoration: none;
+}
+.carousel{
+	position: relative;
+	display: none;
+	margin: 27px auto 0;
+}
+.carousel.active{
+	display: block;
+}
+.carousels{
+	position: relative;
+	height: 580px;
+}
+.carousels:before{
+	content: "";
+	position: absolute;
+	height: 411px;
+	left: -170px;
+	right: -170px;
+	box-shadow: inset 0 -4px 5px rgba(0, 1, 2, 0.65);
+	background: black url("../images/dust.jpg");
+}
+#iPhoneCarousel{
+	width: 208px;
+	height: 439px;
+	background-size: 100% 100%;
+}
+#iPhoneCarousel .carousel-inner{
+	top: 64px;
+	left: 18px;
+	width: 176px;
+	height: 310px;
+}
+#iPadCarousel{
+	width: 300px;
+	height: 439px;
+	background: url("../images/ipad.png") no-repeat;
+	background-size: 100% 100%;
+}
+#iPadCarousel .carousel-inner{
+	top: 37px;
+	left: 30px;
+	width: 240px;
+	height: 358px;
+}
+.carousel-control{
+	width: 16px;
+	height: 28px;
+	background-size: 100% 100%;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+}
+.carousel-control.left{
+	background-image: url("../images/nav-prev.png");
+}
+.carousel-control.right{
+	background-image: url("../images/nav-next.png");
+}
+#iPadCarousel .carousel-control.left{
+	left: 7px;
+}
+#iPadCarousel .carousel-control.right{
+	right: 7px;
+}
+#iPhoneCarousel .carousel-control.left{
+	left: -39px;
+}
+#iPhoneCarousel .carousel-control.right{
+	right: -39px;
+}
+.choise{
+	display: none;
+}
+.features div{
+	width: 50%;
+	margin-bottom: 26px;
+}
+.info{
+	display: none;
+}
+.share{
+	float: none;
+	width: 215px;
+	margin: 40px auto;
+	overflow: hidden;
+}
+.contact{
+	float: none;
+	margin: 40px auto;
+}
+.contact p{
+	margin-left: 0;
+	text-align: center;
+}

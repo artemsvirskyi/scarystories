@@ -94,3 +94,69 @@ footer{
 	height: 729px;
 	margin: 62px 0 0 68px;
 }
+#iPhoneCarousel{
+	top: 244px;
+	left: 1px;
+}
+#iPadCarousel{
+	top: 0px;
+	left: 147px;
+	width: 520px;
+	height: 678px;
+	background: url("../images/ipad.png") no-repeat;
+}
+.carousel-control{
+	width: 30px;
+	height: 30px;
+	background-color: #2b2b29;
+	border: 2px solid #424141;
+	border-radius: 50%;
+	box-shadow: 0 3px rgba(4, 7, 11, 0.7);
+}
+.carousel-control:before{
+	content: "";
+	position: absolute;
+	left: 7px;
+	top: 5px;
+	width: 14px;
+	height: 19px;
+	background: url("../images/nav-retina.png") no-repeat;
+	background-size: 28px 19px;
+}
+.carousel-control.right:before{
+	background-position: -14px 0;
+	top: 6px;
+	left: 9px;
+}
+#iPadCarousel .carousel-control.left{
+	left: 182px;
+	top: 624px;
+}
+#iPadCarousel .carousel-control.right{
+	left: 303px;
+	top: 623px;
+}
+#iPhoneCarousel .carousel-control.left{
+	left: 38px;
+	top: 431px;
+}
+#iPhoneCarousel .carousel-control.right{
+	left: 161px;
+	top: 431px;
+}
+.features{
+	margin-top: 100px;
+}
+.features div{
+	margin-bottom: 40px;
+	margin-right: 11px;
+}
+.updates{
+	margin-left: 75px;
+}
+.huge{
+	margin-left: 175px;
+}
+.info{
+	display: none;
+}

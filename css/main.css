@@ -9,6 +9,7 @@ html, body{
 	color: #525051;
 	font-family: 'PT Sans', sans-serif;
 	font-size: 18px;
+	overflow: hidden;
 }
 .title{
 	font-family: 'Roboto Condensed', sans-serif;
@@ -153,6 +154,82 @@ footer{
 .try768{
 	display: none;
 }
-.carousels{
-	/*display: none;*/
+.switch-holder{
+	display: none;
+}
+.features{
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+.features div{
+	float: left;
+	text-align: center;
+	height: 181px;
+	width: 190px;
+}
+.features div:before{
+	content: "";
+	display: inline-block;
+	width: 68px;
+	height: 54px;
+	background: url("../images/features-icons-retina.png") no-repeat;
+	background-size: 340px 54px;
+}
+.features .likes:before{
+	background-position: -68px 0;
+}
+.features .choise:before{
+	background-position: -136px 0;
+}
+.features .huge:before{
+	background-position: -204px 0;
+}
+.features .easy:before{
+	background-position: -272px 0;
+}
+.features .title{
+	font-size: 28px;
+	line-height: 28px;
+	margin: 10px 0;
+}
+footer .wrapper{
+	overflow: hidden;
+}
+.contact{
+	font-size: 23px;
+	margin: 56px 0 0 67px;
+	float: left;
+	width: 268px;
+}
+.contact p{
+	color: #7f7f87;
+	margin: 0 0 17px 23px;
+	line-height: 34px;
+}
+.contact div{
+	color: #949498;
+	background: #33333b;
+	text-shadow: 0 1px 0 black;
+	text-align: center;
+	border-radius: 8px;
+	padding: 12px 0;
+	font-size: 21px;
+}
+.share{
+	float: right;
+	margin: 80px 50px 0 0;
+}
+.float-left {
+	float:left;
+	padding:2px;
+}
+.share .vk{
+	margin-top: 7px;
+}
+.share .fb{
+	margin-top: 1px;
+}
+.share .g-plus{
+	margin-top: 2px;
 }
