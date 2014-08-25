@@ -134,12 +134,6 @@
 html::after{
 	content: "";
 	background:
-		url("../images/ipad1.jpg"),
-		url("../images/ipad2.jpg"),
-		url("../images/ipad3.jpg"),
-		url("../images/ipad4.jpg"),
-		url("../images/ipad5.jpg"),
-		url("../images/ipad6.jpg"),
 		url("../images/iphone1.jpg"),
 		url("../images/iphone2.jpg"),
 		url("../images/iphone3.jpg"),
