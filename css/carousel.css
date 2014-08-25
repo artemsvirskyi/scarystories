@@ -100,24 +100,6 @@
 	height: 554px;
 	background-color: black;
 }
-#iPadCarousel .first .item-img{
-	background-image: url("../images/ipad6.jpg");
-}
-#iPadCarousel .second .item-img{
-	background-image: url("../images/ipad1.jpg");
-}
-#iPadCarousel .third .item-img{
-	background-image: url("../images/ipad2.jpg");
-}
-#iPadCarousel .fourth .item-img{
-	background-image: url("../images/ipad3.jpg");
-}
-#iPadCarousel .fifth .item-img{
-	background-image: url("../images/ipad4.jpg");
-}
-#iPadCarousel .sixth .item-img{
-	background-image: url("../images/ipad5.jpg");
-}
 #iPhoneCarousel{
 	width: 230px;
 	height: 485px;

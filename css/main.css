@@ -121,17 +121,19 @@ footer{
 	position: relative;
 	display: block;
 	height: 73px;
-	background: url("../images/app-store-dl-retina.png") no-repeat;
-	background-size: 100% 400%;
+	background-size: 100% 100%;
 }
-.full:active{
-	background-position: 0 -73px;
+.app-store-dl.full{
+	background-image: url("../images/dl-full-retina.png");
 }
-.lite{
-	background-position: 0 -146px;
+.app-store-dl.full:active{
+	background-image: url("../images/dl-full-active-retina.png");
 }
-.lite:active{
-	background-position: 0 -219px;
+.app-store-dl.lite{
+	background-image: url("../images/dl-lite-retina.png");
+}
+.app-store-dl.lite:active{
+	background-image: url("../images/dl-lite-active-retina.png");
 }
 .download .splitter{
 	margin: 20px 0 10px;
