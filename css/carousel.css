@@ -131,7 +131,7 @@
 #iPhoneCarousel .sixth .item-img{
 	background-image: url("../images/iphone5.jpg");
 }
-html::after{
+html::before{
 	content: "";
 	background:
 		url("../images/iphone1.jpg"),
