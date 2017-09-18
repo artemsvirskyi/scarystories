@@ -153,10 +153,6 @@ header{
 .info{
 	display: none;
 }
-.contact p{
-	margin-left: 0;
-	text-align: center;
-}
 
 #iPadCarousel .first .item-img{
 	background-image: url("../images/ipad6-mini.jpg");
@@ -176,10 +172,7 @@ header{
 #iPadCarousel .sixth .item-img{
 	background-image: url("../images/ipad5-mini.jpg");
 }
-.contact{
-    float: none;
-    margin: 60px auto;
-}
+
 html::after{
 	content: "";
 	background:

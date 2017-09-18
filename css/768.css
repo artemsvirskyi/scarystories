@@ -174,14 +174,6 @@ header{
 	background-image: url("../images/ipad5.jpg");
 }
 
-.contact{
-    float: none;
-    margin: 60px auto;
-}
-.contact p{
-    margin-left: 0;
-    text-align: center;
-}
 html::after{
 	content: "";
 	background:
