@@ -5,12 +5,6 @@ header{
 	height: 390px;
 	border-top: 5px solid #33333b;
 }
-#main{
-	padding-bottom: 348px;
-}
-footer{
-	height: 348px;
-}
 .catwill-logo{
 	width: 62px;
 	height: 59px;
@@ -159,16 +153,6 @@ footer{
 .info{
 	display: none;
 }
-.share{
-	float: none;
-	width: 215px;
-	margin: 40px auto;
-	overflow: hidden;
-}
-.contact{
-	float: none;
-	margin: 40px auto;
-}
 .contact p{
 	margin-left: 0;
 	text-align: center;
@@ -191,6 +175,10 @@ footer{
 }
 #iPadCarousel .sixth .item-img{
 	background-image: url("../images/ipad5-mini.jpg");
+}
+.contact{
+    float: none;
+    margin: 60px auto;
 }
 html::after{
 	content: "";

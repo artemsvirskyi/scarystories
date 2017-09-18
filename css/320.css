@@ -5,12 +5,6 @@ header{
 	height: 390px;
 	border-top: 5px solid #33333b;
 }
-#main{
-	padding-bottom: 412px;
-}
-footer{
-	height: 412px;
-}
 .catwill-logo{
 	width: 62px;
 	height: 59px;
@@ -167,7 +161,7 @@ footer{
 }
 .contact{
 	float: none;
-	margin: 70px auto;
+	margin: 60px auto;
 }
 .contact p{
 	margin-left: 0;

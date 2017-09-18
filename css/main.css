@@ -195,13 +195,19 @@ footer{
 	line-height: 28px;
 	margin: 10px 0;
 }
+#main{
+    padding-bottom: 264px;
+}
+footer{
+    height: 264px;
+}
 footer .wrapper{
 	overflow: hidden;
 }
 .contact{
 	font-size: 23px;
-	margin: 56px 0 0 67px;
-	float: left;
+	margin: 56px 67px 0 0;
+	float: right;
 	width: 268px;
 }
 .contact p{
@@ -217,21 +223,4 @@ footer .wrapper{
 	border-radius: 8px;
 	padding: 12px 0;
 	font-size: 21px;
-}
-.share{
-	float: right;
-	margin: 80px 50px 0 0;
-}
-.float-left {
-	float:left;
-	padding:2px;
-}
-.share .vk{
-	margin-top: 7px;
-}
-.share .fb{
-	margin-top: 1px;
-}
-.share .g-plus{
-	margin-top: 2px;
 }

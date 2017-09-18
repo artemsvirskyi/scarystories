@@ -8,12 +8,6 @@ header{
 header .wrapper{
 	background: url("../images/header.png");
 }
-#main{
-	padding-bottom: 264px;
-}
-footer{
-	height: 264px;
-}
 .catwill-logo{
 	width: 263px;
 	height: 97px;
